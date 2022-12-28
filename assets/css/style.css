@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.yellow {
+    background-color: rgb(192, 192, 101);
+}
+
+.green {
+    background-color: rgb(92, 164, 92);
+}
+
+div a {
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes scroll{
+    20%{
+        transform: translateY(20px);       
+    }
+
+    50% {transform: translateY(50px); 
+    }
+
+    100% {
+        transform: translateY(100px); 
+    }
+}
+
